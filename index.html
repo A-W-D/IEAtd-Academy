@@ -18,6 +18,29 @@
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script>
+ttq.identify({
+    "email": "<hashed_email_address>", // قم بتعديل البيانات حسب الحاجة
+    "phone_number": "<hashed_phone_number>",
+    "external_id": "<hashed_extenal_id>"
+});
+
+ttq.track('ViewContent', {});
+
+ttq.track('AddToCart', {});
+
+ttq.track('ClickButton', {
+    "contents": [{
+        "content_id": "<content_identifier>",
+        "content_type": "<content_type>",
+        "content_name": "<content_name>"
+    }],
+    "value": "<content_value>",
+    "currency": "<content_currency>"
+});
+
+ttq.track('CompletePayment', {});
+</script>
 </head>
 
 <body>
